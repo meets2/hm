@@ -1,0 +1,293 @@
+  @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+
+body{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+/* ----------Header Styling-------------------- */
+
+.subheader1{
+    padding: 5px;
+    background-color: #4bcbc9;
+    color: #fff;
+}
+.subheader1 .address{
+    float: right;
+    margin-right: 100px;
+}
+.subheader1 span{
+    margin-left: 100px;
+}
+.subheader2{
+    text-align: center;
+}
+.subheader2 img{
+    width: 100px;
+    display:block;
+    margin: 20px auto;
+}
+.subheader2 li{
+    display: inline-block;
+}
+.subheader2 li a{
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    margin: 10px 30px;
+    transition: 0.2s;
+}
+.subheader2 li a:hover{
+    color: #4bcbc9;
+    border-bottom: 2px solid #4bcbc9;
+    transition: 0.2s;
+}
+/* --------- Links --------------- */
+#bars{
+    z-index: 1;
+    position: relative;
+    top: 20px;
+    right: 20px;
+    display: none;
+    font-size: 20px;
+    float: right;
+    padding: 7px;
+}
+#bars2{
+    z-index: 1;
+    padding: 7px;
+    position: relative;
+    top: 20px;
+    right: 20px;
+    /* display: none; */
+    font-size: 20px;
+    float: right;
+    display: none;
+}
+
+/* -----------------MAIN SECTION ----------------- */
+.main{
+    height: 91vh;
+    width: 100%;
+    background-color: #0000009c;
+    color: #fff;
+}
+.main::before{
+    content: '';
+    position:absolute;
+    left: 0;
+    background: url('hotel-bg.jpg');
+    background-size: cover;
+    height: 91vh;
+    width: 100%;
+    z-index: -1;
+}
+.submain{
+    padding-top: 100px;
+    margin-left: 60px;
+}
+.submain h1{
+    font-family: 'Aboreto', cursive;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+.buttons{
+    margin-top: 40px;
+}
+
+.btn{
+    background-color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 3px;
+    margin: 10px;
+    color: black;
+    border: 1px solid #fff;
+    padding: 13px 30px;
+    transition: 0.3s;
+}
+.buttons a:hover{
+    background-color: transparent;
+    color:#fff;
+    transition: 0.3s;
+}
+
+/* ----------------- FOOTER SECTION -------------- */
+.footer{
+    padding:5px 0px  ;
+    background-color: black;
+    color: grey;
+    margin-top: -20px;
+}
+.footer-links .box{
+    padding: 0 20px;
+}
+.citybar{
+    word-wrap: break-word;
+    width: 300px;
+}
+.box .citybar h1{
+    letter-spacing: 10px;
+    color: #fff;
+    font-weight: 100;
+}
+.footer ul{
+    list-style: none;
+    padding: 0;
+    /* text-align: center; */
+}
+.footer-links{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 1px 10px;
+}
+.box h4{
+    text-transform: uppercase;
+}
+.footer-links a{
+    line-height: 1.8;
+    text-decoration: none;
+    color: white;
+}
+.copyright{
+    /* border: 1px solid grey; */
+    text-align: center;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* ---------------------------------- ABOUT PAGE ------------------------------ */
+.about-main::before{
+    background: url('about-bg.jpg');
+    height: 110vh !important;
+    background-size: cover;
+}
+.about-main{
+    /* overflow: hidden; */
+    height: 110vh;
+    background-color: #0000006b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-box{
+    width: 100vw;
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.sub-box img{
+    margin: 0;
+    padding: 0;
+    width: 400px;
+}
+.sub-box a{
+    position: relative;
+    bottom: 20px;
+    text-decoration: none;
+    display: block;
+    background-color: #1871ba;
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+.sub-box h3{
+    position: relative;
+    bottom: 25px;
+    margin: 0;
+    color: midnightblue;
+    background-color: #ffffffc9;
+    padding: 25px;
+}
+.sub-box{
+    box-shadow: 10px 10px 10px black;
+    text-align: center;
+}
+    
+
+/* --------------- MEDIA QUERIES ------------- */
+@media only screen and (max-width: 700px) {
+    /* ----------- HEADER SECTION -------- */
+    .subheader1{
+        font-size: 12px;
+        padding: 5px;
+    }
+    .subheader1 .address{
+        float: right;
+        margin-right: 10px;
+    }
+    .subheader1 span{
+        margin-left: 10px;
+    }
+
+    .subheader2{
+        position: relative;
+        top: 10px;
+    }
+    .subheader2 nav#menu{
+        position:absolute;
+        top:-500px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-color: #fff;
+        transition: 0.2s;
+        height: 380px;
+        overflow: hidden;
+    }
+    nav#menu ul li{
+        display: block;
+        line-height: 3;
+    }
+    nav#menu ul{
+        margin: 30px auto;
+        padding: 0;
+    }
+    #bars{
+        display:block;
+    }
+   
+    /* ------------ MAIN SECTION ---------- */
+    .main h1{
+        margin-left: 20px;
+        line-height: 1.4;
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+    .submain{
+        padding: 100px 0;
+        margin-left: 10px;
+    }
+
+    /* --------------- FOOTER SECTION ------------ */
+    .footer-links{
+        display: block;
+    }
+
+
+    /* ---------------------- ABOUT PAGE ---------------- */
+    .main-box{
+        position: relative;
+        bottom: 80px;
+        transform: scale(0.74);
+    }
+    .sub-box{
+        margin:20px 0;
+    }
+    .sub-box h3{
+        padding: 8px;
+    }
+  }

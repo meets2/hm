@@ -1,0 +1,166 @@
+:root{
+    --form-color:
+}
+
+.form-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000069;
+}
+
+/* ------------------------------ LOGIN / SIGN UP PAGE STYLES ------------------ */
+.form-container::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url('login-bg.jpg');
+    background-size: cover;
+    z-index: -1;
+}
+.form-box{
+    background-color: rgb(255 254 254 / 74%);;
+    /* margin: 0; */
+    /* width: 400px; */
+    box-shadow: 14px 26px 38px black;
+    padding: 50px;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    color:#272727;
+    justify-content: center;
+    align-items: center;
+}
+/* .form-box p{
+    margin-top:60px;
+    margin-left: -80px;
+} */
+.input-fields input::placeholder{
+    font-size: 15px;
+    /* font-style: italic; */
+    letter-spacing: 1px;
+}
+.input-fields input{
+    display: block;
+    padding: 17px 90px; 
+    margin: 20px 0;
+    border: 1px solid #8e8e8e;
+    border-radius: 5px;
+    background-color: #ffffff7d;
+}
+.buttons{
+    margin:0;
+    padding: 4px;
+    text-align: center;
+}
+.buttons input{
+    text-align: center;
+    font-size: 17px;
+    /* font-weight: 600; */
+    padding: 15px 90px; 
+    cursor: pointer;
+    background-color: #db4300a3;
+    color: white;
+    border: 1px solid #db4300a3;
+    border-radius: 3px;
+}
+
+
+/* -------------------------- BOOKING SECTION STYLE --------------------  */
+.booking-container::before{
+    background-image: url('booking.jpg') !important;
+}
+.booking-box{
+    padding: 20px;
+    background: linear-gradient(45deg, #ffffff, #ffffff00);
+}
+.input-fields label{
+    margin: 0 20px;
+}
+label{
+    text-align: right;
+}
+td input[type='date']{
+    display: inline-block;
+    padding: 13px 65px !important;
+}
+td input{
+    display: block;
+    padding: 17px 40px; 
+    /* margin: 10px 0; */
+    border: 1px solid #8e8e8e;
+    border-radius: 5px;
+    background-color: #ffffff7d;
+}
+td input,td select{
+    margin: 12px;
+}
+td select{
+    background-color: #ffffff7d;
+    padding: 13px 65px !important;
+    border-radius: 5px;
+}
+td input[type='radio']{
+    display: inline-block;
+}
+.booking-btn{
+    margin: 0 !important;
+    padding: 0;
+}
+.booking-btn input{
+    padding: 12px 40px !important;
+}
+.booking-btn input[type='reset']{
+    background-color: transparent;
+    color:#272727;
+    border-color: #272727;
+}
+
+
+
+
+/* ----------------------------- MEDIA QUERIES ----------------------------- */
+@media only screen and (max-width: 700px){
+    .form-box{
+        padding:25px 30px;
+    }
+    .input-fields input{
+        padding: 15px 50px; 
+    }
+    .buttons input{
+        padding: 11px 20px;
+    }
+
+    /* ------------ BOOKING SECTION ----------- */
+     .booking-container::before{
+        height: 80vh;
+    }
+    .booking-container{
+        height: 80vh;
+    }
+    .booking-box{
+        transform: scale(0.8);
+        padding: 20px;
+    }
+    td input{
+        margin: 12px 5px;
+        padding: 10px 20px; 
+    }
+    td input[type='date']{
+        padding: 10px 45px !important;
+    }
+    td select{
+        margin: 12px 5px;
+        padding: 10px 45px !important;
+    }
+    .booking-btn input{
+        padding: 11px 30px !important;
+        margin: 20px;
+    } 
+}
+
