@@ -39,5 +39,5 @@ function hello(){
 // ----------------------------- SORRY FUNCTION ---------------------
 function sorryFunction(){
     // alert("Our project is being ready... Please try later");
-    alert("થોડી શાંતિ રાખો, હજુ પ્રોજેક્ટ તૈયાર થાય છે... તમારે બોવ ઉતાવળ લાગે છે");
+    alert("Currrently unavialable, project is being ready !");
 }
